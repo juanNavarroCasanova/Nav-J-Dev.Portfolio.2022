@@ -12,7 +12,7 @@ export default function Portfolio(props) {
                     <img src="/assets/website.png" alt=""/>
                     <div className="description">
                         <div className="icon">
-                            <a href="https://au.linkedin.com/in/navarrocasanova?trk=profile-badge" target="_blank" rel="noopener noreferrer">Website Repository</a> 
+                            <a href="https://github.com/juanNavarroCasanova/portfolio" target="_blank" rel="noopener noreferrer">Website Repository</a> 
                         </div>
                     </div>
                 </div>
