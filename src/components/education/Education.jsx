@@ -27,7 +27,7 @@ export default function Education() {
             id: 2,
             course:"Diploma of Information Technology",
             major:"Major in Software Development",
-            logo:"/assets/tafe-qld.png",
+            logo:"/assets/tafe-qld.PNG",
             date:"July 2013 to July 2015",
             units:[
                 "- Design a database.",
