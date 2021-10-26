@@ -9,7 +9,7 @@ export default function Portfolio(props) {
         <div className="portfolio" id="portfolio">
             <div className="container">
                 <div className="item">
-                    <img src="/assets/website.PNG" alt=""/>
+                    <img src="/assets/web.png" alt=""/>
                     <div className="description">
                         <div className="icon">
                             <a href="https://github.com/juanNavarroCasanova/portfolio" target="_blank" rel="noopener noreferrer">Website Repository</a> 
