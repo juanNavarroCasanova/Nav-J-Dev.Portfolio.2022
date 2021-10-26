@@ -14,9 +14,9 @@ export default function Works() {
             website:"https://www.efficiencyleaders.com.au/",
             logoCompany:"/assets/ef-logo.png",
             logosTechnologies: [
-                "/assets/angular.png",
+                "/assets/angular.PNG",
                 "/assets/bootstrap.png",
-                "/assets/git.png",
+                "/assets/git.PNG",
                 "/assets/net.PNG",
                 "/assets/Ts.png",
             ],
@@ -35,7 +35,7 @@ export default function Works() {
             id: "agtrix",
             title:"Agtrix",
             website:"https://www.agtrix.com/",
-            logoCompany:"/assets/agtrix-logo.png",
+            logoCompany:"/assets/agtrix.png",
             logosTechnologies: [
                 "/assets/bootstrap.PNG",
                 "/assets/net.png",
