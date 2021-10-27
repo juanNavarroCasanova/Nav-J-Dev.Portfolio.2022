@@ -25,11 +25,10 @@
         }
 
         .item{
-            width: 20%;
-            height: 40%;
+            width: 300px;
+            height: 250px;
             border-radius: 20px;
             border: 1px solid gray;
-            margin: 20px 70px;
             display: flex;
             align-items:center;
             justify-content:center;
@@ -50,36 +49,31 @@
                 flex-direction: column;
                 justify-content:space-evenly;
                 display: flex;
-                justify-content: flex-start;
                 align-items: center;
 
                     h3{
-                        margin-top: 5vh;
-                        font-size: 240%;
+                        font-size: 45px;
                         text-align: center;
 
                         @include mobile{
-                            font-size: 180%;
+                            font-size: 30px;  
                         }
 
                     }
                     h2{
-                        margin-top: 5vh;
-                        font-size: 180%;
+                        font-size: 30px;
                         text-align: center; 
                          
                         @include mobile{
-                            font-size: 120%;
-                            margin-top: 5vh;
+                            font-size: 20px;
 
                         }
                     }
 
                     .icon{
-                        margin-top: 1vh;
                         display:flex;
                         justify-content: center;
-                        background-color: rgba(crimson, 0.8);
+                        background-color: rgba(crimson, 0.6);
                         align-items: center;
                         cursor: pointer;
                         border-radius: 20px;
@@ -91,10 +85,10 @@
                         background-position: center center; 
                         width: 70%;
                         height: 20%;
-                        font-size: 150%;
-                        
+                        font-size: 20px;
+
                         @include mobile{
-                            font-size: 80%;
+                            font-size: 15px;
                         }
                         
                         a{
@@ -152,10 +146,10 @@
     }
 
     .bottomContainer{
-        height:10%;
-        width:10%;
+        height:80px;
+        width:150px;
         position: absolute;
-        bottom: 2%;
+        bottom: 10px;
         flex-direction: column;
         display: flex;
         justify-content: space-around;
@@ -177,7 +171,7 @@
 
 
             h3{
-                font-size: 140%;
+                font-size: 25px;
                 display: flex;
                 justify-content: center;
                 position: relative;

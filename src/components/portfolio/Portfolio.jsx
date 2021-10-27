@@ -24,7 +24,7 @@ export default function Portfolio(props) {
                     </div>
                 </div>
                 <div className="item construction">
-                    <img src="/assets/handLaptop.jpg" alt=""/>
+                    <img src="/assets/hand-laptop.jpg" alt=""/>
                     <div className="description">
                         <h3>Roster App</h3>
                         <h2>Under Construction</h2>
