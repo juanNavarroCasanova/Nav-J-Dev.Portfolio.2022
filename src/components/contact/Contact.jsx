@@ -7,23 +7,24 @@ import emailjs from 'emailjs-com';
 export default function Contact() {
     const [message,setMessage] = useState(false);
     const [messageSent,setMessageSent] = useState(false);
+    let image= "../../background-images/link.png"
     
-    const sendEmail = (e)=>{
+    function sendEmail(e) {
         e.preventDefault();
         setMessage(true);
-       
+
 
         emailjs.sendForm(
             'service_elagqq4',
             'template_td4zhln',
             e.target,
             'user_hEagTAxfn8o2OkemLpFGu')
-            .then(res=>{
+            .then(res => {
                 res.preventDefault();
                 setMessageSent(true);
-            }).catch(err=> console.log(err));
+            }).catch(err => console.log(err));
 
-            e.target.reset();
+        e.target.reset();
     }
     return (
         <div className="contact" id="contact">
@@ -31,7 +32,9 @@ export default function Contact() {
                 <div className="card">
                     <h2>LET'S GET SOCIAL...</h2>
                     <div className="icon">
-                        <a href="https://au.linkedin.com/in/navarrocasanova?trk=profile-badge" target="_blank" rel="noopener noreferrer">Transparent Link</a> 
+                        <a href="https://au.linkedin.com/in/navarrocasanova?trk=profile-badge" target="_blank" rel="noopener noreferrer">
+                            <img src={'assets/link.png'} />
+                        </a> 
                     </div> 
                     <h2>Or drop me a message :)</h2>
                     <form onSubmit={sendEmail}>
