@@ -10,7 +10,7 @@
   transition: all 2s ease-in-out;
 
   @include mobile {
-    display: none;
+    
   }
 
   .wrapper {
@@ -24,14 +24,13 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      padding-left: 5px;
+      padding-left: 20px;
 
       .logo {
-        font-size: 50px;
-        font-weight: 900;
+        font-size: 45px;
         text-decoration: none;
         color: inherit;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
         &:hover {
           color: yellow;
         }
@@ -39,11 +38,11 @@
     }
 
     .right {
-      padding-right: 5px;
+      padding-right: 20px;
 
       .hamburger {
-        width: 32px;
-        height: 25px;
+        width: 40px;
+        height: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -51,7 +50,7 @@
 
         span {
           width: 100%;
-          height: 11%;
+          height: 3px;
           background-color: crimson;
           transform-origin: left;
           transition: all 2s ease;
