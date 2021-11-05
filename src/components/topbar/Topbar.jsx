@@ -7,7 +7,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            NaVaKaSa-J Dev
+            Navakasa - J Dev
           </a>
         </div>
         <div className="right">

@@ -1,189 +1,163 @@
 @import "../../global.scss";
 
-.portfolio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-image: url('../../background-images/hand.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top; 
-    background-size: cover;
-    justify-content:space-evenly;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  justify-content: space-evenly;
 
-    .container{
-        width: 100%;
-        height: 70%;
+  .container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include mobile {
+      height: 100%;
+    }
+
+    .item {
+      width: 350px;
+      height: 300px;
+      border-radius: 20px;
+      border: 1px solid gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      transition: all 0.5s ease;
+      box-shadow: 5px 10px 18px grey;
+
+      @include mobile {
+        width: 60%;
+        height: 20%;
+      }
+
+      .description {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
         display: flex;
         align-items: center;
-        justify-content:space-around;
-        flex-wrap: wrap;
 
-        @include mobile{
-            height: 100%;
+        h3 {
+          font-size: 45px;
+          text-align: center;
+
+          @include mobile {
+            font-size: 30px;
+          }
         }
+        h2 {
+          font-size: 30px;
+          text-align: center;
 
-        .item{
-            width: 300px;
-            height: 250px;
-            border-radius: 20px;
-            border: 1px solid gray;
-            display: flex;
-            align-items:center;
-            justify-content:center;
-            color: white;
-            position: relative;
-            transition: all .5s ease;
-            box-shadow: 5px 10px 18px black;
-
-            @include mobile{
-                width: 60%;
-                height: 20%;
-            }
-
-            .description{
-                position: absolute;
-                width: 80%;
-                height:100%;
-                flex-direction: column;
-                justify-content:space-evenly;
-                display: flex;
-                align-items: center;
-
-                    h3{
-                        font-size: 45px;
-                        text-align: center;
-
-                        @include mobile{
-                            font-size: 30px;  
-                        }
-
-                    }
-                    h2{
-                        font-size: 30px;
-                        text-align: center; 
-                         
-                        @include mobile{
-                            font-size: 20px;
-
-                        }
-                    }
-
-                    .icon{
-                        display:flex;
-                        justify-content: center;
-                        background-color: rgba(crimson, 0.6);
-                        align-items: center;
-                        cursor: pointer;
-                        border-radius: 20px;
-                        border-color: grey;
-                        border-style: solid;
-                        border-width: 1px; 
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center center; 
-                        width: 70%;
-                        height: 20%;
-                        font-size: 20px;
-
-                        @include mobile{
-                            font-size: 15px;
-                        }
-                        
-                        a{
-                            text-decoration: none; 
-                            font-weight: bold;
-                            color: white;
-                        }
-            
-                        a:visited { 
-                            text-decoration: none; 
-                            color: white;
-                           }
-                    }
-            }
-        
-
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
-
-            &:hover{
-                background-image: url('../../background-images/github.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                color: yellow;
-
-                img{
-                    opacity: 0.1;
-                    z-index: 0;
-                }
-
-            &.construction{
-                background-image: url('../../background-images/construction.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                transition: all .9s ease ease-in-out;
-                
-                &:hover{
-                    color: white;
-                    
-
-                    img{
-                        z-index: 0;
-                    }
-                }
-            }
-
+          @include mobile {
+            font-size: 20px;
           }
         }
 
-    }
+        .icon {
+          display: flex;
+          justify-content: center;
+          background-color: rgba(crimson, 0.6);
+          align-items: center;
+          cursor: pointer;
+          border-radius: 20px;
+          border-color: grey;
+          border-style: solid;
+          border-width: 1px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          width: 70%;
+          height: 20%;
+          font-size: 20px;
 
-    .bottomContainer{
-        height:80px;
-        width:150px;
-        position: absolute;
-        bottom: 10px;
-        flex-direction: column;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(black, 0.5);
-        border-radius: 10px;
-        border-color:grey;
-        border-style: solid;
-        border-width: 1px; 
+          @include mobile {
+            font-size: 15px;
+          }
 
-        @include mobile{
-            display:none;
-        }
-
-        a{
+          a {
             text-decoration: none;
-            color: yellow;
-            animation: arrowBlink 2s infinite;
+            font-weight: bold;
+            color: white;
+          }
 
-
-            h3{
-                font-size: 25px;
-                display: flex;
-                justify-content: center;
-                position: relative;
-            }
-            
-
-            .arrow {
-                display: flex;
-                justify-content: center;
-            }
-
+          a:visited {
+            text-decoration: none;
+            color: white;
+          }
         }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &:hover {
+        background-image: url("../../background-images/code.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: yellow;
+
+        img {
+          opacity: 0.1;
+          z-index: 0;
+        }
+
+        &.construction {
+          background-image: url("../../background-images/code.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: all 0.9s ease ease-in-out;
+
+          &:hover {
+            color: white;
+
+            img {
+              z-index: 0;
+            }
+          }
+        }
+      }
     }
-  
+  }
+
+  .bottomContainer {
+    position: absolute;
+    bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mobile {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: red;
+      animation: arrowBlink 2s infinite;
+      h3 {
+        font-size: 20px;
+      }
+      .arrow {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }

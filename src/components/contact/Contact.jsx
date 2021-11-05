@@ -7,8 +7,7 @@ import emailjs from 'emailjs-com';
 export default function Contact() {
     const [message,setMessage] = useState(false);
     const [messageSent,setMessageSent] = useState(false);
-    let image= "../../background-images/link.png"
-    
+   
     function sendEmail(e) {
         e.preventDefault();
         setMessage(true);

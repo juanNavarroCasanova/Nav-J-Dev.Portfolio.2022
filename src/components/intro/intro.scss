@@ -2,11 +2,13 @@
 
 .intro {
   display: flex;
-  background-image: url("../../background-images/water.jpg");
+  background-image: url("../../background-images/code2.jpg");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: white;
   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .wrapper {
     display: flex;
@@ -17,10 +19,13 @@
     height: 100%;
 
     .description {
+      width: 75%;
+      height: 150px;
+      margin: 0px 0px 250px 1600px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-evenly;
+      align-items: flex-start;
 
       @include mobile {
         padding-left: 0px;
@@ -28,7 +33,7 @@
       }
 
       h1 {
-        font-size: 50px;
+        font-size: 45px;
 
         @include mobile {
           font-size: 40px;
@@ -36,7 +41,7 @@
       }
 
       h2 {
-        font-size: 45px;
+        font-size: 40px;
 
         @include mobile {
           font-size: 30px;
@@ -44,7 +49,7 @@
       }
 
       h3 {
-        font-size: 35px;
+        font-size: 30px;
 
         @include mobile {
           font-size: 25px;
@@ -100,7 +105,7 @@
         animation: arrowBlink 2s infinite;
 
         h3 {
-          font-size: 18px;
+          font-size: 15px;
 
           @include mobile {
             @include mobile {
