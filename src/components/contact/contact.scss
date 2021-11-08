@@ -1,161 +1,146 @@
 @import "../../global.scss";
 
-.contact{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    background-image: url('../../background-images/dark-lights.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../background-images/dark-lights.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
-    .wrapper{
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 10vh;
+      width: 50%;
+      height: 80%;
+      border-radius: 10px;
+      border-color: black;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0px 0px 20px -3px white;
+      background-color: rgba(black, 0.6);
+
+      @include mobile {
+        width: 80%;
+        height: 60%;
+        margin-top: 0vh;
+      }
+
+      h2 {
+        font-size: 40px;
+        color: white;
+
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 20px;
+
+        @include mobile {
+          width: 30%;
+        }
+
+        a {
+          display: block;
+        }
+      }
+
+      form {
+        width: 60%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        height:100%;
+        justify-content: space-between;
 
-        .card{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            margin-top: 10vh;
-            width: 50%;
-            height:80%;
-            border-radius: 10px;
-            border-color:black;
-            border-style: solid;
-            border-width: 1px;
-            box-shadow: 0px 0px 20px -3px white; 
-            background-color:rgba(black, 0.6);
-
-            @include mobile {
-                width: 80%;
-                height:60%;
-                margin-top: 0vh;
-            }
-
-            h2{
-                font-size: 40px;
-                color:white;
-
-                @include mobile {
-                    font-size: 25px;
-                }
-            }
-
-            .icon{
-                display:flex;
-                align-items: center;
-                cursor: pointer;
-                border-radius: 20px;
-            
-                
-                 
-                
-
-                @include mobile {
-                    width: 30%;
-                 
-                }
-                
-                
-                a{
-                 display : block;
-            
-                    
-                }
-    
-            }
-
-            form{
-                width: 60%;
-                height: 70%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-
-                @include mobile {
-                    width: 80%;
-                    height:70%;  
-                }
-
-                input{
-                    width: 90%;
-                    height: 10%;
-                    font-size: 25px;
-                    border-radius: 5px;
-                    border-color:black;
-                    border-style: solid;
-                    border-width: 1px;
-                        @include mobile {
-                            width: 80%;
-                            height:9%;  
-                            font-size: 10px; 
-                        }
-                    }
-
-                        textarea{
-                            width: 90%;
-                            height: 50%;
-                            font-size: 25px;
-                            border-radius: 5px;
-                            border-color:black;
-                            border-style: solid;
-                            border-width: 1px;
-
-                            @include mobile {
-                                font-size: 10px;  
-                            }
-
-                            }
-
-                        button{
-                            width: 40%;
-                            height: 10%;
-                            color: white;
-                            background-color: crimson;
-                            border: none;
-                            border-radius: 10px;
-                            font-weight: 100;
-                            cursor: pointer;
-                            font-size: 25px;
-                            border-color:black;
-                            border-style: solid;
-                            border-width: 0.5px;
-                            margin: 1vh;
-                            
-                            @include mobile {
-                                width: 30%;
-                                height: 10%;
-                                font-size: 10px;  
-                            }
-
-                            &:focus{
-                                outline: none;
-                            }
-
-                            }
-
-                            span{
-                                color: yellow;
-                                font-weight: 100;
-                                font-size: 20px;
-
-                                @include mobile {
-                                    font-size: 10px;
-                                }
-
-                            }
-
-                    }
-
-                }
+        @include mobile {
+          width: 80%;
+          height: 70%;
         }
-        
+
+        input {
+          width: 90%;
+          height: 10%;
+          font-size: 25px;
+          border-radius: 5px;
+          border-color: black;
+          border-style: solid;
+          border-width: 1px;
+          @include mobile {
+            width: 80%;
+            height: 9%;
+            font-size: 10px;
+          }
+        }
+
+        textarea {
+          width: 90%;
+          height: 50%;
+          font-size: 25px;
+          border-radius: 5px;
+          border-color: black;
+          border-style: solid;
+          border-width: 1px;
+
+          @include mobile {
+            font-size: 10px;
+          }
+        }
+
+        button {
+          width: 40%;
+          height: 10%;
+          color: white;
+          background-color: crimson;
+          border: none;
+          border-radius: 10px;
+          font-weight: 100;
+          cursor: pointer;
+          font-size: 25px;
+          border-color: black;
+          border-style: solid;
+          border-width: 0.5px;
+          margin: 1vh;
+
+          @include mobile {
+            width: 30%;
+            height: 10%;
+            font-size: 10px;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        span {
+          color: yellow;
+          font-weight: 100;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
 }

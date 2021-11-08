@@ -106,9 +106,8 @@
       }
 
       &:hover {
-        background-image: url("../../background-images/code.jpg");
+        background-image: url("../../background-images/react.png");
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center center;
         color: yellow;
 
@@ -118,7 +117,7 @@
         }
 
         &.construction {
-          background-image: url("../../background-images/code.jpg");
+          background-image: url("../../background-images/under-construction.jpg");
           background-repeat: no-repeat;
           background-size: cover;
           transition: all 0.9s ease ease-in-out;
