@@ -5,7 +5,9 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 export default function Portfolio(props) {
   return (
     <div className="portfolio" id="portfolio">
-      <div className="header">My projects</div>
+      <div className="header">
+        <h1>My  Projects</h1>
+      </div>
       <div className="introduction">
         <h2>
           I am a Software Developer from Spain based in Australia, with
@@ -30,26 +32,26 @@ export default function Portfolio(props) {
               </a>
             </div>
             <div className="details">
-              <h4>
+              <p>
                 Responsive React portfolio website using functional components,
                 React hooks, Sass preprocessor, git and EmailJS. Done with
                 Visual Studio Code.{" "}
-              </h4>
+              </p>
             </div>
           </div>
         </div>
         <div className="item construction">
           <img src="/assets/covid.jpg" alt="Image of Covid app" />
           <div className="description">
-            <h3>COVID Tracker</h3>
-            <h2>Coming soon !!!</h2>
+            <h4>COVID Tracker</h4>
+            <h3>Coming soon !!!</h3>
           </div>
         </div>
       </div>
 
       <div className="bottomContainer">
-        <a href="#works">
-          <h3>Work Experience</h3>
+        <a href="#contact">
+          <h3>Contact Page</h3>
           <div className="arrow">
             <KeyboardArrowDownIcon />
           </div>
