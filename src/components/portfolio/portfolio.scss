@@ -71,13 +71,6 @@
         height: 20%;
       }
 
-      .details {
-        p {
-          font-size: 25px;
-          font-family: "Roboto", sans-serif;
-          line-height: 25px;
-        }
-      }
 
       .description {
         position: absolute;
@@ -102,6 +95,14 @@
 
           @include mobile {
             font-size: 20px;
+          }
+        }
+
+        .details {
+          p {
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
           }
         }
 
