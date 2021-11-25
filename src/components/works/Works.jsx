@@ -12,16 +12,6 @@ export default function Works() {
       id: "efficiencyLeaders",
       title: "Efficiency Leaders",
       website: "https://www.efficiencyleaders.com.au/",
-      logoCompany: "/assets/ef-logo.png",
-      logosTechnologies: [
-        "/assets/angular.png",
-        "/assets/bootstrap.png",
-        "/assets/git.png",
-        "/assets/net.png",
-        "/assets/ts.png",
-      ],
-      image: "/assets/handLaptop.jpg",
-      desc: "Efficiency Leaders is an Australian company based in Sydney/Gold Coast/Bangalore providing technology solutions process automation within organisations.",
       roles: [
         "- Adding and testing of features and bug fixes to the Rapid product.",
         "- Analyse bug reports from users and fixing them.",
@@ -29,30 +19,28 @@ export default function Works() {
         "- Use of git and git-flow for product develop version control processes.",
         "- Adding and modifying components using typescript and Angular 6/7.",
       ],
-      product: "Rapid AP-Accounts payable automation solution.",
+      product: "Rapid AP - Accounts payable automation solution",
+      tools:
+        "Typescript, Node.js, Angular 7, CSS 3, SASS, HTML 5, Git, Typescript, C#, .NET, Visual Studio.",
+      date: "November 2017 - December 2018.",
+      role: "Front-end Developer.",
     },
     {
       id: "agtrix",
       title: "Agtrix",
       website: "https://www.agtrix.com/",
-      logoCompany: "/assets/agtrix.png",
-      logosTechnologies: [
-        "/assets/bootstrap.png",
-        "/assets/net.png",
-        "/assets/xamarin-black.png",
-        "/assets/c-sharp.png",
-        "/assets/kendo.png",
-      ],
-      image: "/assets/keyboard.jpg",
-      desc: "Agtrix is an innovative Australian company based in Ocean Shores providing sophisticated technology solutions for the agricultural sector.",
       roles: [
         "- Adding new features and improvement of layout of mobile App.",
         "- Testing new changes & updates on Mobile App.",
-        "- Xamarin Forms – Cross Platform Win-IOS- Android).",
+        "- Xamarin Forms – Cross Platform (Win-IOS- Android).",
         "- Release of Mobile App (Win-Android-IOS).",
         "- Analyse bug reports from users and fixing them.",
       ],
-      product: "Mobile App",
+      product: "Agtrix Farming Mobile App",
+      tools:
+        "Xamarin, CSS 3, HTML 5, C#, Visual Studio.",
+      date: "May 2016 - February 2017.",
+      role: "Front-end Developer.",
     },
   ];
 
@@ -79,14 +67,20 @@ export default function Works() {
                   </a>
                 </div>
               </div>
-              <div className="roles">
-              <p>{d.product}</p>
-                <p>Front-end Developer. November 2017 - December 2018.</p>
+              <div className="info">
+                <h2>{d.product}</h2>
+                <h3>
+                  {d.role} {d.date}
+                </h3>
+                <h4>Roles and responsabilities</h4>
                 <ul>
                   {d.roles.map((role) => {
                     return <li>{role}</li>;
                   })}
                 </ul>
+
+                <h4>Tools/Technologies</h4>
+                <p>{d.tools}</p>
               </div>
             </div>
           </div>
