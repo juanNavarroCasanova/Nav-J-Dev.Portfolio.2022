@@ -72,14 +72,14 @@ export default function Works() {
                 <h3>
                   {d.role} {d.date}
                 </h3>
-                <h4>Roles and responsabilities</h4>
+                <h4>Roles and Responsabilities</h4>
                 <ul>
                   {d.roles.map((role) => {
                     return <li>{role}</li>;
                   })}
                 </ul>
 
-                <h4>Tools/Technologies</h4>
+                <h4>Tools - Technologies</h4>
                 <p>{d.tools}</p>
               </div>
             </div>
