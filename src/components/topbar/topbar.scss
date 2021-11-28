@@ -41,8 +41,8 @@
       padding-right: 20px;
 
       .hamburger {
-        width: 35px;
-        height: 25px;
+        width: 40px;
+        height: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -60,21 +60,19 @@
   }
 
   &.active {
-    background-color: rgba(crimson, 0.8);
-    color: white;
+
+    
     transition: all 3s ease;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: white;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
           transform: rotate(-45deg);
         }
       }

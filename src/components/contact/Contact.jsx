@@ -29,13 +29,13 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="wrapper">
                 <div className="card">
-                    <h2>LET'S GET SOCIAL...</h2>
+                    <h1>LET'S GET SOCIAL</h1>
                     <div className="icon">
                         <a href="https://au.linkedin.com/in/navarrocasanova?trk=profile-badge" target="_blank" rel="noopener noreferrer">
-                            <img src={'assets/link.png'} />
+                            <img src={'assets/linkedin.png'} />
                         </a> 
                     </div> 
-                    <h2>Or drop me a message :)</h2>
+                    <h2>Or drop me a message...</h2>
                     <form onSubmit={sendEmail}>
                             <input name="name" placeholder="Name" required/>
                             <input type="email" name="email" placeholder="Email" required/>
