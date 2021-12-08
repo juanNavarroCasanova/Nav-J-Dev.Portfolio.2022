@@ -34,6 +34,10 @@
         &:hover {
           color: yellow;
         }
+
+        @include respond-to('xl') {
+          font-size: 35px;
+        }
       }
     }
 
@@ -47,6 +51,11 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+
+        @include respond-to('xl') {
+          width: 30px;
+          height: 25px;
+        }
 
         span {
           width: 100%;

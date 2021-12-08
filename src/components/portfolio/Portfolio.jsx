@@ -6,16 +6,17 @@ export default function Portfolio(props) {
   return (
     <div className="portfolio" id="portfolio">
       <div className="header">
-        <h1>My  Projects</h1>
+        <h1>My Projects</h1>
       </div>
       <div className="introduction">
         <h2>
-          I am a Software Developer from Spain based in Australia, with
-          experience using technologies such as ReactJS, Angular 5/6, HTML5,
-          CSS3, C# as well as building Mobile Applications for IOS, Android and
-          Windows using Xamarin. I really enjoy learning new scripting languages
-          and web tools. These are my personal projects so far, my own portfolio
-          and a Covid Tracker, which will be done by the end of January 2022.{" "}
+          I am a Freelance Developer Programmer from Spain based in Byron Bay -
+          Australia, with experience using technologies such as ReactJS, Angular
+          5/6, HTML5, CSS3, C# as well as building Mobile Applications for IOS,
+          Android and Windows using Xamarin. I really enjoy learning new
+          scripting languages and web tools that can help you to turn your
+          ideas into sites and applications that can make a difference. These are my personal projects so
+          far, my own portfolio and a Covid Tracker.{" "}
         </h2>
       </div>
       <div className="container">
