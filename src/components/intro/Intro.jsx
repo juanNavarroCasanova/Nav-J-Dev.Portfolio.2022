@@ -27,7 +27,7 @@ export default function Intro() {
                 <h3>Developer Programmer <span ref={textRef}></span></h3>
             </div>
             <div className="bottomContainer">
-                    <a href="#portfolio">
+                    <a href="#education">
                         <h3>Learn more about what I can do</h3>
                         <div className="arrow">
                             <KeyboardArrowDownIcon/>

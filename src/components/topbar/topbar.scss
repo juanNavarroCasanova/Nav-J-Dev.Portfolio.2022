@@ -26,11 +26,13 @@
       justify-content: space-evenly;
       padding-left: 20px;
 
-      .logo {
+      h1{
         font-size: 40px;
+        font-weight: normal;
         text-decoration: none;
         color: inherit;
         transition: all 2s ease-in-out;
+        cursor: pointer;
         &:hover {
           color: yellow;
         }

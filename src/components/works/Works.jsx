@@ -103,8 +103,8 @@ export default function Works() {
         ) : null}
       </div>
       <div className="bottomContainer">
-        <a href="#education">
-          <h3>Education</h3>
+        <a href="#portfolio">
+          <h3>My projects</h3>
           <div className="arrow">
             <KeyboardArrowDownIcon />
           </div>

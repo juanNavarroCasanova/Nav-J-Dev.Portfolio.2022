@@ -51,7 +51,7 @@
 
       .item {
         width: 90%;
-        height: 75%;
+        height: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -59,8 +59,11 @@
         margin: 0;
         border-bottom: 3px solid crimson;
 
-        @include mobile {
+        @include respond-to("xl") {
+          border-bottom: 1px solid crimson;
         }
+
+        
 
         .top {
           display: flex;
@@ -70,11 +73,14 @@
           font-size: 35px;
           height: 150px;
           color: crimson;
-          
 
           .title {
             margin: 10px;
             height: 60px;
+
+            @include respond-to("xl") {
+              font-size: 28px;
+            }
           }
 
           .button {
@@ -91,9 +97,12 @@
             width: 150px;
             font-size: 15px;
 
-            @include mobile {
-              height: 30px;
+            @include respond-to("xl") {
+              height: 40px;
+              width: 140px;
+              font-size: 13px;
             }
+
             a {
               text-decoration: none;
               font-weight: bold;
@@ -109,13 +118,17 @@
           justify-content: space-around;
           width: 60%;
           height: 80%;
-          border-color: rgba(crimson,0.5);
+          border-color: rgba(crimson, 0.5);
           border-style: solid;
           border-width: 1px;
           border-radius: 5px;
           color: white;
-          margin:40px 0px 70px 0px;
-          background-color: rgba(black, 0.3);;
+          margin: 40px 0px 70px 0px;
+          background-color: rgba(black, 0.3);
+
+          @include respond-to("xl") {
+            height: 100%;
+          }
 
           h2 {
             font-size: 26px;
@@ -124,7 +137,10 @@
             font-family: "Roboto", sans-serif;
             font-weight: normal;
 
-            @include mobile {
+            @include respond-to("xl") {
+              font-size: 18px;
+              margin-bottom: 0px;
+              margin-top: 10px;
             }
           }
           h3 {
@@ -133,6 +149,9 @@
             font-weight: normal;
             font-family: "Roboto", sans-serif;
             font-style: italic;
+            @include respond-to("xl") {
+              font-size: 14px;
+            }
           }
           h4 {
             font-size: 20px;
@@ -142,13 +161,22 @@
             border-bottom: 1px solid rgba(crimson, 0.5);
             margin-bottom: -15px;
             line-height: 35px;
-
+            @include respond-to("xl") {
+              font-size: 14px;
+              margin-bottom: 0px;
+              line-height: 20px;
+              
+            }
           }
 
           p {
             font-size: 18px;
             align-items: center;
             font-family: "Roboto", sans-serif;
+            @include respond-to("xl") {
+              font-size: 13px;
+              margin-bottom: 15px;
+            }
           }
 
           ul {
@@ -164,6 +192,10 @@
               font-weight: normal;
               font-family: "Roboto", sans-serif;
 
+              @include respond-to("xl") {
+                font-size: 13px;
+              }
+
               @include mobile {
                 font-size: 10px;
               }
@@ -175,8 +207,6 @@
   }
 
   .bottomContainer {
-    height: 13%;
-    width: 12%;
     position: absolute;
     bottom: 10px;
     flex-direction: column;
@@ -195,6 +225,10 @@
 
       h3 {
         font-size: 15px;
+
+        @include respond-to("xl") {
+          font-size: 13px;
+        }
       }
 
       .arrow {

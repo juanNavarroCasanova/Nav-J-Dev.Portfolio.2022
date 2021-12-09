@@ -16,9 +16,18 @@
     height: 8%;
     border-bottom: 3px solid crimson;
 
+    @include respond-to("xl") {
+      border-bottom: 1px solid crimson;
+      height: 10%;
+    }
+
     h1 {
       font-weight: normal;
       font-size: 35px;
+
+      @include respond-to("xl") {
+        font-size: 25px;
+      }
     }
   }
 
@@ -33,10 +42,19 @@
     width: 80%;
     margin-bottom: 25px;
 
+    @include respond-to("xl") {
+      margin-top: 30px;
+      height: 25%;
+    }
+
     h2 {
       font-weight: normal;
       font-size: 22px;
       font-family: "Roboto", sans-serif;
+
+      @include respond-to("xl") {
+        font-size: 17px;
+      }
       
     }
   }
@@ -50,6 +68,14 @@
     justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 3px solid crimson;
+
+    @include respond-to("xl") {
+      border-bottom: 1px solid crimson;
+      margin-bottom: 70px;
+      width: 90%;
+      
+    }
+    
 
     @include mobile {
       height: 100%;
@@ -65,10 +91,17 @@
       color: white;
       position: relative;
       transition: all 0.5s ease;
+      @include respond-to("xl") {
+        background-color: black;
+      }
 
       @include mobile {
         width: 60%;
         height: 20%;
+      }
+
+      @include respond-to("xl") {
+        height: 170px;
       }
 
 
@@ -81,29 +114,27 @@
         display: flex;
         align-items: center;
 
+       
+        
+
         h4 {
           font-size: 30px;
           text-align: center;
 
-          @include mobile {
-            font-size: 30px;
-          }
-        }
-        p {
-          font-size: 15px;
-          text-align: center;
-          
-
-          @include mobile {
+          @include respond-to("xl") {
             font-size: 20px;
           }
         }
-
         .details {
           p {
             font-size: 18px;
             font-family: "Roboto", sans-serif;
             font-weight: normal;
+
+            @include respond-to("xl") {
+              font-size: 12px;
+              color: yellow;
+            }
           }
         }
 
@@ -121,6 +152,15 @@
           height: 40px;
           width: 250px;
           font-size: 15px;
+
+          @include respond-to("xl") {
+            font-size: 10px;
+            margin-bottom: 0px;
+            width: 150px;
+            height: 30px;
+            background-color: rgba(crimson, 0.9);
+
+          }
 
           @include mobile {
             font-size: 15px;
@@ -161,7 +201,7 @@
         color: whitesmoke;
 
         img {
-          opacity: 0.1;
+          opacity: 0.7;
           z-index: 0;
         }
 
@@ -199,12 +239,19 @@
       text-decoration: none;
       color: crimson;
       animation: arrowBlink 2s infinite;
+
       h3 {
         font-size: 15px;
+
+        @include respond-to("xl") {
+          font-size: 13px;
+        }
       }
+
       .arrow {
         display: flex;
         justify-content: center;
+        position: relative;
       }
     }
   }

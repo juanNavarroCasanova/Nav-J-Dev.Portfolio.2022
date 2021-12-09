@@ -6,12 +6,10 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
-            Navakasa - J Dev
-          </a>
+          <h1>Navakasa - J Dev</h1>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
@@ -21,5 +19,3 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     </div>
   );
 }
-
-

@@ -70,8 +70,8 @@ export default function Education() {
         ))}
       </div>
       <div className="bottomContainer">
-        <a href="#contact">
-          <h3>Contact Page</h3>
+        <a href="#works">
+          <h3>Work Experience</h3>
           <div className="arrow">
             <KeyboardArrowDownIcon />
           </div>

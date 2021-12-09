@@ -26,9 +26,9 @@ function App() {
           </OutsideClickHandler> 
           <div className="sections">
             <Intro />
-            <Portfolio />
-            <Works />
             <Education />
+            <Works />
+            <Portfolio />
             <Contact />
           </div>
         </div>
