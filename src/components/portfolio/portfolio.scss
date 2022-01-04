@@ -13,12 +13,14 @@
     align-items: center;
     color: crimson;
     margin-top: 130px;
-    height: 8%;
-    border-bottom: 3px solid crimson;
+    height: 80px;
+    border-bottom: 1px solid crimson;
 
     @include respond-to("xl") {
-      border-bottom: 1px solid crimson;
-      height: 10%;
+      height: 70px;
+    }
+    @include respond-to("l") {
+      height: 50px;
     }
 
     h1 {
@@ -27,6 +29,27 @@
 
       @include respond-to("xl") {
         font-size: 25px;
+        color:white;
+      }
+      @include respond-to("l") {
+        font-size: 24px;
+        color:pink;
+      }
+      @include respond-to("m") {
+        font-size: 24px;
+        color:yellow;
+      }
+      @include respond-to("ms") {
+        font-size: 25px;
+        color:red;
+      }
+      @include respond-to("s") {
+        font-size: 25px;
+        color:blue;
+      }
+      @include respond-to("xs") {
+        font-size: 25px;
+        color:green;
       }
     }
   }
@@ -54,6 +77,9 @@
 
       @include respond-to("xl") {
         font-size: 17px;
+      }
+      @include respond-to("l") {
+        font-size: 15px;
       }
       
     }
@@ -90,7 +116,7 @@
       justify-content: center;
       color: white;
       position: relative;
-      transition: all 0.5s ease;
+  
       @include respond-to("xl") {
         background-color: black;
       }

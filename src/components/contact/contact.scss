@@ -31,15 +31,23 @@
       border-color: rgba(crimson, 0.6);
 
       @include respond-to("xl") {
-        width: 35%;
+        width: 40%;
         height: 70%;
       }
 
-      @include mobile {
-        width: 80%;
-        height: 60%;
-        margin-top: 0vh;
+      @include respond-to("l") {
+        width: 50%;
       }
+      @include respond-to("m") {
+        width: 55%;
+      }
+      @include respond-to("m") {
+        width: 60%;
+      }
+      @include respond-to("ms") {
+        height: 55%;
+      }
+
 
       h1 {
         font-size: 25px;
@@ -49,6 +57,8 @@
         @include respond-to("xl") {
           font-size: 20px;
         }
+       
+
 
         @include mobile {
           font-size: 25px;
@@ -62,6 +72,25 @@
 
         @include respond-to("xl") {
           font-size: 15px;
+        }
+
+        @include respond-to("l") {
+         
+          
+        }
+        @include respond-to("m") {
+          
+          
+        }
+        @include respond-to("ms") {
+          
+          
+        }
+        @include respond-to("s") {
+          color:brown;
+        }
+        @include respond-to("xs") {
+          color:red;
         }
       }
 
@@ -153,7 +182,7 @@
           @include respond-to("xl") {
             font-size: 12px;
           }
-
+         
           &:focus {
             outline: none;
           }

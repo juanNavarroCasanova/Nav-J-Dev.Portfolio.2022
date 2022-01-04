@@ -11,7 +11,7 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
+    @include respond-to("m") {
       display: none;
     }
 
@@ -31,10 +31,14 @@
     transition: all 1s ease-out;
     background-color: rgba(black, 0.6);
 
-    @include mobile {
+    @include respond-to("m") {
       height: 100vh;
       flex-direction: column;
       justify-content: center;
+    }
+    @include respond-to("xs") {
+      height: 100vh;
+      flex-direction: column;
     }
 
     .container {
@@ -43,10 +47,12 @@
       align-items: center;
       justify-content: center;
 
-      @include mobile {
-        display: flex;
+      @include respond-to("m") {
         flex-direction: column;
-        justify-content: center;
+      }
+      @include respond-to("xs") {
+        flex-direction: column;
+        height: 100%;
       }
 
       .item {
@@ -57,13 +63,18 @@
         justify-content: space-around;
         flex-direction: column;
         margin: 0;
-        border-bottom: 3px solid crimson;
+        border-bottom: 1px solid crimson;
 
-        @include respond-to("xl") {
-          border-bottom: 1px solid crimson;
+        @include respond-to("m") {
+          border-bottom: none;
+          height: 95%;
         }
-
-        
+        @include respond-to("xs") {
+          border-bottom: none;
+          height: 75%;
+         
+          
+        }
 
         .top {
           display: flex;
@@ -73,13 +84,40 @@
           font-size: 35px;
           height: 150px;
           color: crimson;
+          @include respond-to("m") {
+            height: 30%;
+          }
+          @include respond-to("xs") {
+            height: 22%;
+            justify-content: space-around;
+          }
 
           .title {
-            margin: 10px;
-            height: 60px;
+            font-size: 35px;
 
             @include respond-to("xl") {
-              font-size: 28px;
+              font-size: 25px;
+              color: white;
+            }
+            @include respond-to("l") {
+              font-size: 24px;
+              color: pink;
+            }
+            @include respond-to("m") {
+              font-size: 24px;
+              color: yellow;
+            }
+            @include respond-to("ms") {
+              font-size: 25px;
+              color: red;
+            }
+            @include respond-to("s") {
+              font-size: 25px;
+              color: blue;
+            }
+            @include respond-to("xs") {
+              font-size: 11px;
+              color:crimson;
             }
           }
 
@@ -102,6 +140,27 @@
               width: 140px;
               font-size: 13px;
             }
+            @include respond-to("l") {
+              height: 35px;
+              width: 120px;
+              font-size: 12px;
+            }
+            @include respond-to("m") {
+              height: 40px;
+              width: 90px;
+              font-size: 8px;
+            }
+            @include respond-to("s") {
+              height: 20px;
+              width: 80px;
+              font-size: 8px;
+            }
+            @include respond-to("xs") {
+              height: 15px;
+              width: 60px;
+              font-size: 6px;
+              
+            }
 
             a {
               text-decoration: none;
@@ -111,93 +170,211 @@
           }
         }
 
-        .info {
+        .card {
           display: flex;
           align-items: center;
           flex-direction: column;
           justify-content: space-around;
-          width: 60%;
+          width: 70%;
           height: 80%;
           border-color: rgba(crimson, 0.5);
           border-style: solid;
           border-width: 1px;
           border-radius: 5px;
           color: white;
-          margin: 40px 0px 70px 0px;
           background-color: rgba(black, 0.3);
 
           @include respond-to("xl") {
             height: 100%;
           }
+          @include respond-to("m") {
+            width: 80%;
+            height: 100%;
+          }
+          @include respond-to("s") {
+          }
+          @include respond-to("xs") {
+            height: 80%;
+            width: 95%;
+          }
 
-          h2 {
-            font-size: 26px;
-            margin-bottom: -30px;
+          .top {
+            display: flex;
             align-items: center;
-            font-family: "Roboto", sans-serif;
-            font-weight: normal;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 15%;
 
-            @include respond-to("xl") {
-              font-size: 18px;
-              margin-bottom: 0px;
-              margin-top: 10px;
+            .product {
+              h2 {
+                font-size: 26px;
+                align-items: center;
+                font-family: "Roboto", sans-serif;
+                font-weight: normal;
+
+                @include respond-to("xl") {
+                  font-size: 18px;
+                }
+
+                @include respond-to("l") {
+                  font-size: 19px;
+                }
+                @include respond-to("m") {
+                  font-size: 20px;
+                }
+                @include respond-to("ms") {
+                  font-size: 17px;
+                }
+                @include respond-to("s") {
+                  color: yellow;
+                  font-size: 11px;
+                }
+                @include respond-to("xs") {
+                  color:green;
+                  font-size: 10px;
+                  
+                }
+              }
+            }
+
+            .role {
+
+              h3 {
+                font-size: 19px;
+                align-items: center;
+                font-weight: normal;
+                font-family: "Roboto", sans-serif;
+                font-style: italic;
+                @include respond-to("xl") {
+                  font-size: 14px;
+                }
+                @include respond-to("l") {
+                  font-size: 13px;
+                }
+                @include respond-to("m") {
+                  font-size: 15px;
+                }
+                @include respond-to("m") {
+                  font-size: 13px;
+                }
+                @include respond-to("xs") {
+                  color: whitesmoke;
+                  font-size: 8px;
+                }
+              }
             }
           }
-          h3 {
-            font-size: 19px;
+
+          .content {
+            display: flex;
             align-items: center;
-            font-weight: normal;
-            font-family: "Roboto", sans-serif;
-            font-style: italic;
-            @include respond-to("xl") {
-              font-size: 14px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .responsabilities {
+              h4 {
+                font-size: 20px;
+                align-items: center;
+                font-weight: normal;
+                font-family: "Roboto", sans-serif;
+                border-bottom: 1px solid rgba(crimson, 0.5);
+                
+                @include respond-to("xl") {
+                  font-size: 14px;
+                 
+                }
+                @include respond-to("l") {
+                  font-size: 13px;
+                  
+                }
+                @include respond-to("m") {
+                  font-size: 12px;
+                }
+                @include respond-to("ms") {
+                  font-size: 11px;
+                }
+                @include respond-to("xs") {
+                  font-size: 9px;
+                  line-height: 12px;
+                }
+              }
+            }
+            .details {
+              ul {
+                width: 70%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-between;
+
+                @include respond-to("xs") {
+                  width: 90%;
+                  
+                }
+
+                li {
+                  font-size: 19px;
+                  font-weight: normal;
+                  font-family: "Roboto", sans-serif;
+
+                  @include respond-to("xl") {
+                    font-size: 13px;
+                  }
+                  @include respond-to("l") {
+                    font-size: 12px;
+                  }
+                  @include respond-to("m") {
+                    font-size: 11px;
+                  }
+                  @include respond-to("ms") {
+                    font-size: 11px;
+                  }
+                  @include respond-to("xs") {
+                    font-size: 8px;
+                    line-height: 12px;
+                  }
+                }
+              }
             }
           }
-          h4 {
-            font-size: 20px;
+          .bottom {
+            display: flex;
             align-items: center;
-            font-weight: normal;
-            font-family: "Roboto", sans-serif;
-            border-bottom: 1px solid rgba(crimson, 0.5);
-            margin-bottom: -15px;
-            line-height: 35px;
-            @include respond-to("xl") {
-              font-size: 14px;
-              margin-bottom: 0px;
-              line-height: 20px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 20%;
+            .tools {
+              h4 {
+                font-size: 10px;
+                align-items: center;
+                font-weight: normal;
+                font-family: "Roboto", sans-serif;
+                border-bottom: 1px solid rgba(crimson, 0.5);
+
+                @include respond-to("xs") {
+                  font-size: 9px;
+                }
+              }
               
             }
-          }
 
-          p {
-            font-size: 18px;
-            align-items: center;
-            font-family: "Roboto", sans-serif;
-            @include respond-to("xl") {
-              font-size: 13px;
-              margin-bottom: 15px;
-            }
-          }
-
-          ul {
-            width: 70%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            text-align: center;
-
-            li {
-              font-size: 19px;
-              margin: 3px;
-              font-weight: normal;
-              font-family: "Roboto", sans-serif;
-
-              @include respond-to("xl") {
-                font-size: 13px;
-              }
-
-              @include mobile {
-                font-size: 10px;
+            .details {
+              p {
+                font-size: 18px;
+                align-items: center;
+                font-family: "Roboto", sans-serif;
+                @include respond-to("xl") {
+                  font-size: 13px;
+                }
+                @include respond-to("l") {
+                  font-size: 12px;
+                }
+                @include respond-to("m") {
+                  font-size: 10px;
+                }
+                @include respond-to("xs") {
+                  font-size: 7px;
+                }
               }
             }
           }
@@ -214,9 +391,10 @@
     justify-content: space-around;
     align-items: center;
 
-    @include mobile {
+    @include respond-to("xs") {
       display: none;
     }
+   
 
     a {
       text-decoration: none;
@@ -228,6 +406,9 @@
 
         @include respond-to("xl") {
           font-size: 13px;
+        }
+        @include respond-to("xs") {
+          font-size: 7px;
         }
       }
 

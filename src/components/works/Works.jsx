@@ -16,7 +16,7 @@ export default function Works() {
         "- Adding and testing of features and bug fixes to the Rapid product.",
         "- Analyse bug reports from users and fixing them.",
         "- Modify Controllers and Models when was required with C#.",
-        "- Use of git and git-flow for product develop version control processes.",
+        "- Use of git and git-flow for product develop version control.",
         "- Adding and modifying components using typescript and Angular 6/7.",
       ],
       product: "Rapid AP - Accounts payable automation solution",
@@ -37,8 +37,7 @@ export default function Works() {
         "- Analyse bug reports from users and fixing them.",
       ],
       product: "Agtrix Farming Mobile App",
-      tools:
-        "Xamarin, CSS 3, HTML 5, C#, Visual Studio.",
+      tools: "Xamarin, CSS 3, HTML 5, C#, Visual Studio.",
       date: "May 2016 - February 2017.",
       role: "Front-end Developer.",
     },
@@ -67,20 +66,37 @@ export default function Works() {
                   </a>
                 </div>
               </div>
-              <div className="info">
-                <h2>{d.product}</h2>
-                <h3>
-                  {d.role} {d.date}
-                </h3>
-                <h4>Roles and Responsabilities</h4>
-                <ul>
-                  {d.roles.map((role) => {
-                    return <li>{role}</li>;
-                  })}
-                </ul>
-
-                <h4>Tools - Technologies</h4>
-                <p>{d.tools}</p>
+              <div className="card">
+                <div className="top">
+                  <div className="product">
+                    <h2>{d.product}</h2>
+                  </div>
+                  <div className="role">
+                    <h3>
+                      {d.role} {d.date}
+                    </h3>
+                  </div>
+                </div>
+                <div className="content">
+                  <div className="responsabilities">
+                    <h4>Roles and Responsabilities</h4>
+                  </div>
+                  <div className="details">
+                    <ul>
+                      {d.roles.map((role) => {
+                        return <li>{role}</li>;
+                      })}
+                    </ul>
+                  </div>
+                </div>
+                <div className="bottom">
+                    <div className="tools">
+                      <h4>Tools - Technologies</h4>
+                    </div>
+                    <div className="details">
+                      <p>{d.tools}</p>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>

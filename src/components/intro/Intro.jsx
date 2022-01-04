@@ -15,7 +15,7 @@ export default function Intro() {
             backSpeed:60,
             showCursor: true,
             cursorChar: "|",
-            strings: ['React JS', 'Angular', '.Net' ] })
+            strings: ['React JS', 'Angular', '.Net', 'Wordpress', 'Bootstrap', 'SASS' ] })
        
     }, [])
     return (
@@ -23,8 +23,9 @@ export default function Intro() {
         <div className="wrapper">
             <div className="description">
                 <h2>Hi There, I'm</h2>
-                <h1>Juan Navarro Casanova</h1>
-                <h3>Developer Programmer <span ref={textRef}></span></h3>
+                <h1>Juan N. Casanova</h1>
+                <h3>Developer Programmer</h3>
+                <h3><span ref={textRef}></span></h3>
             </div>
             <div className="bottomContainer">
                     <a href="#education">
