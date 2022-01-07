@@ -19,7 +19,7 @@ export default function Works() {
         "- Use of git and git-flow for product develop version control.",
         "- Adding and modifying components using typescript and Angular 6/7.",
       ],
-      product: "Rapid AP - Accounts payable automation solution",
+      product: "Rapid AP.",
       tools:
         "Typescript, Node.js, Angular 7, CSS 3, SASS, HTML 5, Git, Typescript, C#, .NET, Visual Studio.",
       date: "November 2017 - December 2018.",
@@ -49,20 +49,19 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
+        <div className="title">
+          <h1>Work Experience.</h1>
+        </div>
         {data.map((d) => (
           <div key={d.id} className="container">
             <div className="item">
               <div className="top">
-                <div className="title">
-                  <p>{d.title}</p>
+                <div className="head">
+                  <h2>{d.title}</h2>
                 </div>
                 <div className="button">
                   <a href={d.website} target="_blank" rel="noopener noreferrer">
-                    View Website
+                    Website
                   </a>
                 </div>
               </div>
@@ -71,10 +70,13 @@ export default function Works() {
                   <div className="product">
                     <h2>{d.product}</h2>
                   </div>
-                  <div className="role">
-                    <h3>
-                      {d.role} {d.date}
-                    </h3>
+                  <div className="position">
+                    <div className="role">
+                      <h2>{d.role}</h2>
+                    </div>
+                    <div className="date">
+                      <h3>{d.date}</h3>
+                    </div>
                   </div>
                 </div>
                 <div className="content">
@@ -90,18 +92,17 @@ export default function Works() {
                   </div>
                 </div>
                 <div className="bottom">
-                    <div className="tools">
-                      <h4>Tools - Technologies</h4>
-                    </div>
-                    <div className="details">
-                      <p>{d.tools}</p>
-                    </div>
+                  <div className="tools">
+                    <h4>Tools - Technologies</h4>
                   </div>
+                  <div className="details">
+                    <h3>{d.tools}</h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         ))}
-      </div>
       <div className="arrow right">
         {currentSlide === 0 ? (
           <ArrowForwardIosIcon

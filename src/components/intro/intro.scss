@@ -1,93 +1,145 @@
 @import "../../global.scss";
 
 .intro {
-  display: flex;
   background-image: url("../../background-images/code2.png");
   background-size: cover;
   background-position: center;
   color: white;
   background-color: black;
   background-repeat: no-repeat;
-
-
+  border-bottom: 10px solid rgb(59, 59, 59);
+  position: relative;
+  
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px 0px;
-    
+    width: 100vw;
+    padding: 300px 0;
+    text-align: center;
+
+    @include respond-to("xl") {
+      padding: 225px 0;
+    }
+    @include respond-to("l") {
+      padding: 200px 0;
+    }
     
     .description {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 1.75rem;
       
-      @include respond-to('ms') {
-        font-size: 1.5rem;;
-      }
-      @include respond-to('s') {
-        font-size: 1.25rem;
-      }
-      
-
       h1 {
-        
-        @include respond-to('xs') {
-          color: white;
-          font-size: 1.75rem;
+        font-size: 50px;
+        @include respond-to("xl") {
+          font-size: 39px;
         }
-        
-
+        @include respond-to("l") {
+          font-size: 36px;
+        }
+        @include respond-to("m") {
+          font-size: 33px;
+        }
+        @include respond-to("ms") {
+          font-size: 30px;
+        }
+        @include respond-to("s") {
+          font-size: 28px;
+        }
+        @include respond-to("xs") {
+          font-size: 26px;
+        }
       }
 
       h2 {
-  
-        @include respond-to('ms') {
-          font-size: 2rem;
-          
+        font-size: 42px;
+        @include respond-to("xl") {
+          font-size: 37px; 
         }
-        @include respond-to('xs') {
-          font-size: 1.25rem;
-        
+        @include respond-to("l") {
+          font-size: 36px;
         }
-       
+        @include respond-to("m") {
+          font-size: 33px;
+        }
+        @include respond-to("ms") {
+          font-size: 30px;
+        }
+        @include respond-to("s") {
+          font-size: 28px;
+        }
+        @include respond-to("xs") {
+          font-size: 26px;
+        }
       }
 
       h3 {
-       
-        @include respond-to('s') {
-          font-size: 1.75rem;
-          
+        font-size: 35px;
+        @include respond-to("xl") {
+          font-size: 33px;
         }
-        @include respond-to('xs') {
-          font-size: 1.25rem;
-           
+        @include respond-to("l") {
+          font-size: 30px;
         }
-       
+        @include respond-to("m") {
+          font-size: 27px;
+        }
+        @include respond-to("ms") {
+          font-size: 26px;
+        }
+        @include respond-to("s") {
+          font-size: 25px;
+        }
+        @include respond-to("xs") {
+          font-size: 24px;
+        }
 
         span {
           color: yellow;
-          @include respond-to('xs') {
-            font-size: 1.25rem;
+          font-size: 39px;
+          @include respond-to("xl") {
+            font-size: 35px;
+          }
+          @include respond-to("l") {
+            font-size: 33px;
+          }
+          @include respond-to("m") {
+            font-size: 31px;
+          }
+          @include respond-to("ms") {
+            font-size: 30px;
+          }
+          @include respond-to("s") {
+            font-size: 28px;
+          }
+          @include respond-to("xs") {
+            font-size: 26px;
           }
         }
 
         .ityped-cursor {
-          
           opacity: 1;
           -webkit-animation: blink 1s infinite;
           -moz-animation: blink 1s infinite;
           animation: blink 1s infinite;
 
-          @include respond-to('xs') {
-            font-size: 1.25rem; 
+          @include respond-to("xl") {
+            font-size: 39px;
           }
-          
+          @include respond-to("l") {
+            font-size: 36px;
+          }
+          @include respond-to("m") {
+            font-size: 33px;
+          }
+          @include respond-to("ms") {
+            font-size: 30px;
+          }
+          @include respond-to("s") {
+            font-size: 28px;
+          }
+          @include respond-to("xs") {
+            font-size: 26px;
+          }
         }
 
         @keyframes blink {
@@ -110,43 +162,46 @@
       }
     }
 
-    .bottomContainer {
-      position: absolute;
-      bottom: 10px;
-      flex-direction: column;
-      justify-content: center;
+  }
+
+  .bottomContainer {
+    bottom: 10px;
+    position: absolute;
+    width: 100vw;
+  
+    a {
+      text-decoration: none;
+      color: grey;
+      animation: arrowBlink 2s infinite;
       align-items: center;
 
-      a {
-        text-decoration: none;
-        color: red;
-        animation: arrowBlink 2s infinite;
+      h3 {
+        font-size: 22px;
 
-        h3 {
-          
-          @include respond-to('ms') {
-              font-size: 14px;
-          }
-          @include respond-to('s') {
-            font-size: 16px;
-          }
-          @include respond-to('xs') {
-            font-size: 14px;
-          }
+        @include respond-to("xl") {
+          font-size: 20px;
         }
-
-        
-
-        .arrow {
-          display: flex;
-          justify-content: center;
+        @include respond-to("l") {
+          font-size: 19px;
+        }
+        @include respond-to("m") {
+          font-size: 18px;
+        }
+        @include respond-to("ms") {
+          font-size: 17px;
+        }
+        @include respond-to("s") {
+          font-size: 16px;
+        }
+        @include respond-to("xs") {
+          font-size: 15px;
         }
       }
 
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
-        }
+      .arrow {
+        display: flex;
+        justify-content: center;
+        position: relative;
       }
     }
   }

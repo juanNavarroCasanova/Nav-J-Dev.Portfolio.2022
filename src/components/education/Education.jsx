@@ -6,11 +6,11 @@ export default function Education() {
   const data = [
     {
       id: 1,
-      provider: "Southern Cross University",
-      location: "Coolangatta, Gold Coast - Australia.",
-      course: "Bachelor of Information Technology",
-      major: "Major in Software Development",
-      date: "July 2015 to July 2017",
+      provider: "Southern Cross University.",
+      location: "Gold Coast - Australia.",
+      course: "Bachelor of IT.",
+      major: "Major in Software Development.",
+      date: "July 2015 to July 2017.",
       units: [
         "- Foundations of Computing.",
         "- Web Development I & II.",
@@ -24,12 +24,11 @@ export default function Education() {
     },
     {
       id: 2,
-      provider: "Tafe Queensland",
-      location: "Coomera, Gold Coast - Australia.",
-      course: "Bachelor of Information Technology",
-      course: "Diploma of Information Technology",
-      major: "Major in Software Development",
-      date: "July 2013 to July 2015",
+      provider: "Tafe Queensland.",
+      location: "Gold Coast - Australia.",
+      course: "Diploma of IT.",
+      major: "Major in Software Development.",
+      date: "July 2013 to July 2015.",
       units: [
         "- Design a database.",
         "- Integrate database with a website.",
@@ -45,14 +44,15 @@ export default function Education() {
   return (
     <div className="education" id="education">
       <div className="title">
-        <h1>Education</h1>
+        <h1>Education.</h1>
       </div>
       <div className="container">
         {data.map((d) => (
           <div key={d.id} className="card">
             <div className="top">
-              <h1>{d.provider}</h1>
-              <h2>{d.location}</h2>
+              <h1>{d.course}</h1>
+              <h2>{d.major}</h2>
+              <h3>{d.date}</h3>
             </div>
             <div className="center">
               <ul>
@@ -62,9 +62,8 @@ export default function Education() {
               </ul>
             </div>
             <div className="bottom">
-              <h2>{d.course}</h2>
-              <h3>{d.major}</h3>
-              <h4>{d.date}</h4>
+              <h1>{d.provider}</h1>
+              <h2>{d.location}</h2>
             </div>
           </div>
         ))}
