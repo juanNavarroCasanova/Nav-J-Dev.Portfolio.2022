@@ -7,7 +7,7 @@
   color: white;
   background-color: black;
   background-repeat: no-repeat;
-  border-bottom: 10px solid rgb(59, 59, 59);
+  border-bottom: 10px solid rgb(crimson,0.9);
   position: relative;
   
 
@@ -29,24 +29,24 @@
       align-items: center;
       
       h1 {
-        font-size: 50px;
+        font-size: 45px;
         @include respond-to("xl") {
-          font-size: 39px;
-        }
-        @include respond-to("l") {
           font-size: 36px;
         }
-        @include respond-to("m") {
+        @include respond-to("l") {
           font-size: 33px;
         }
-        @include respond-to("ms") {
+        @include respond-to("m") {
           font-size: 30px;
         }
-        @include respond-to("s") {
+        @include respond-to("ms") {
           font-size: 28px;
         }
-        @include respond-to("xs") {
+        @include respond-to("s") {
           font-size: 26px;
+        }
+        @include respond-to("xs") {
+          font-size: 24px;
         }
       }
 
@@ -165,13 +165,13 @@
   }
 
   .bottomContainer {
-    bottom: 10px;
+    bottom: 15px;
     position: absolute;
     width: 100vw;
   
     a {
       text-decoration: none;
-      color: grey;
+      color: rgb(crimson,0.8);
       animation: arrowBlink 2s infinite;
       align-items: center;
 

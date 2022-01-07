@@ -8,13 +8,13 @@ export default function Education() {
       id: 1,
       provider: "Southern Cross University.",
       location: "Gold Coast - Australia.",
-      course: "Bachelor of IT.",
+      course: "Bachelor of Information Technology.",
       major: "Major in Software Development.",
       date: "July 2015 to July 2017.",
       units: [
         "- Foundations of Computing.",
         "- Web Development I & II.",
-        "- Systems Analysis and Design",
+        "- Systems Analysis and Design.",
         "- Programming I & II",
         "- Data Communications and Networks",
         "- Database Systems.",
@@ -55,11 +55,16 @@ export default function Education() {
               <h3>{d.date}</h3>
             </div>
             <div className="center">
-              <ul>
+            <div className="units">
+              <h2>Units</h2>
+            </div>
+            <div className="info">
+            <ul>
                 {d.units.map((unit) => {
                   return <li>{unit}</li>;
                 })}
               </ul>
+            </div>
             </div>
             <div className="bottom">
               <h1>{d.provider}</h1>
