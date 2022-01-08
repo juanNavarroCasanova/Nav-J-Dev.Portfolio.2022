@@ -12,14 +12,15 @@ export default function Education() {
       major: "Major in Software Development.",
       date: "July 2015 to July 2017.",
       units: [
-        "- Foundations of Computing.",
-        "- Web Development I & II.",
-        "- Systems Analysis and Design.",
-        "- Programming I & II",
-        "- Data Communications and Networks",
-        "- Database Systems.",
-        "- Object Oriented Programming.",
-        "- Programming Mobile Systems.",
+        "Foundations of Computing.",
+        "Web Development I & II.",
+        "Systems Analysis and Design.",
+        "Programming I & II.",
+        "Data Communications and Networks.",
+        "Database Systems.",
+        "Object Oriented Programming.",
+        "Programming Mobile Systems.",
+        "Apply intermediate & advanced programming skills in another language.",
       ],
     },
     {
@@ -30,13 +31,13 @@ export default function Education() {
       major: "Major in Software Development.",
       date: "July 2013 to July 2015.",
       units: [
-        "- Design a database.",
-        "- Integrate database with a website.",
-        "- Apply intermediate & advanced programming skills in another language.",
-        "- Apply intermediate & advanced object-oriented language skills.",
-        "- Apply testing techniques for software development.",
-        "- Create web-based programs.",
-        "- Gather data to identify business requirements.",
+        "Design a database.",
+        "Integrate database with a website.",
+        "Apply intermediate & advanced programming skills in another language.",
+        "Apply intermediate & advanced object-oriented language skills.",
+        "Apply testing techniques for software development.",
+        "Create web-based programs.",
+        "Gather data to identify business requirements.",
       ],
     },
   ];
@@ -75,7 +76,7 @@ export default function Education() {
       </div>
       <div className="bottomContainer">
         <a href="#works">
-          <h3>Work Experience</h3>
+          <h3>About My Jobs</h3>
           <div className="arrow">
             <KeyboardArrowDownIcon />
           </div>

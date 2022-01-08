@@ -5,19 +5,17 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Works() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const data = [
     {
       id: "efficiencyLeaders",
       title: "Efficiency Leaders",
       website: "https://www.efficiencyleaders.com.au/",
       roles: [
-        "- Adding and testing of features and bug fixes to the Rapid product.",
-        "- Analyse bug reports from users and fixing them.",
-        "- Modify Controllers and Models when was required with C#.",
-        "- Use of git and git-flow for product develop version control.",
-        "- Adding and modifying components using typescript and Angular 6/7.",
+        "Adding and testing of features and bug fixes to the Rapid product.",
+        "Analyse bug reports from users and fixing them.",
+        "Modify Controllers and Models when was required with C#.",
+        "Use of git and git-flow for product develop version control.",
+        "Adding and modifying components using typescript and Angular 6/7.",
       ],
       product: "Rapid AP.",
       tools:
@@ -30,11 +28,11 @@ export default function Works() {
       title: "Agtrix",
       website: "https://www.agtrix.com/",
       roles: [
-        "- Adding new features and improvement of layout of mobile App.",
-        "- Testing new changes & updates on Mobile App.",
-        "- Xamarin Forms – Cross Platform (Win-IOS- Android).",
-        "- Release of Mobile App (Win-Android-IOS).",
-        "- Analyse bug reports from users and fixing them.",
+        "Adding new features and improvement of layout of mobile App.",
+        "Testing new changes & updates on Mobile App.",
+        "Xamarin Forms – Cross Platform (Win-IOS- Android).",
+        "Release of Mobile App (Win-Android-IOS).",
+        "Analyse bug reports from users and fixing them.",
       ],
       product: "Agtrix Farming Mobile App",
       tools: "Xamarin, CSS 3, HTML 5, C#, Visual Studio.",
@@ -43,18 +41,15 @@ export default function Works() {
     },
   ];
 
-  const handleClick = (direction) => {
-    direction === "left" ? setCurrentSlide(0) : setCurrentSlide(1);
-  };
-
   return (
     <div className="works" id="works">
-        <div className="title">
-          <h1>Work Experience.</h1>
-        </div>
-        {data.map((d) => (
-          <div key={d.id} className="container">
-            <div className="item">
+      <div className="title">
+        <h1>Work Experience.</h1>
+      </div>
+      {data.map((d) => (
+        <div key={d.id} className="container">
+          <div className="item">
+            <div className="header">
               <div className="top">
                 <div className="head">
                   <h2>{d.title}</h2>
@@ -79,49 +74,35 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="content">
-                  <div className="responsabilities">
-                    <h4>Roles and Responsabilities</h4>
-                  </div>
-                  <div className="details">
-                    <ul>
-                      {d.roles.map((role) => {
-                        return <li>{role}</li>;
-                      })}
-                    </ul>
-                  </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="responsabilities">
+                <h4>Roles and Responsabilities</h4>
+              </div>
+              <div className="details">
+                <ul>
+                  {d.roles.map((role) => {
+                    return <li>{role}</li>;
+                  })}
+                </ul>
+              </div>
+              <div className="bottom">
+                <div className="tools">
+                  <h4>Tools - Technologies</h4>
                 </div>
-                <div className="bottom">
-                  <div className="tools">
-                    <h4>Tools - Technologies</h4>
-                  </div>
-                  <div className="details">
-                    <h3>{d.tools}</h3>
-                  </div>
+                <div className="details">
+                  <h3>{d.tools}</h3>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      <div className="arrow right">
-        {currentSlide === 0 ? (
-          <ArrowForwardIosIcon
-            style={{ fontSize: 50, opacity: 0.5, color: "whitesmoke" }}
-            onClick={() => handleClick("")}
-          />
-        ) : null}
-      </div>
-      <div className="arrow left">
-        {currentSlide === 1 ? (
-          <ArrowBackIosIcon
-            style={{ fontSize: 50, opacity: 0.5, color: "whitesmoke" }}
-            onClick={() => handleClick("left")}
-          />
-        ) : null}
-      </div>
+        </div>
+      ))}
+
       <div className="bottomContainer">
         <a href="#portfolio">
-          <h3>My projects</h3>
+          <h3>More About My Work</h3>
           <div className="arrow">
             <KeyboardArrowDownIcon />
           </div>
