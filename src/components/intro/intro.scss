@@ -7,6 +7,7 @@
   background-color: black;
   background-repeat: no-repeat;
   position: relative;
+  border-bottom:4px solid white;
 
   .wrapper {
     width: 100vw;
@@ -22,29 +23,9 @@
 
       @include respond-to("xl") {
         padding-top: 30vh;
-        color: hotpink;
       }
-      @include respond-to("l") {
-        padding-top: 30vh;
-        color: green;
-        
-      }
-      @include respond-to("m") {
-        padding-top: 30vh;
-        color: red;
-
-      }
-      @include respond-to("ms") {
-        padding-top: 30vh;
-        color: blue;
       
-      }
-      @include respond-to("s") {
-        color: brown;
-        
-      }
       @include respond-to("xs") {
-        color: yellow;
         padding-top: 20vh;
       }
       
@@ -55,7 +36,6 @@
         font-size: 50px;
         font-weight: 400;
       
-        
         @include respond-to("xl") {
           font-size: 47px;
         }
@@ -66,8 +46,9 @@
           font-size: 42px;
         }
         @include respond-to("ms") {
-          font-size: 37px;
+          font-size: 30px;
           line-height: 70px;
+          letter-spacing: 5px;
         }
         @include respond-to("s") {
           font-size: 27px;

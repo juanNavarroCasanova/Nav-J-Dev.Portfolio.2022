@@ -42,7 +42,7 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <div className="title">
-        <h1>Work Experience.</h1>
+        <h1>Work Experience</h1>
       </div>
       {data.map((d) => (
         <div key={d.id} className="container">
@@ -100,9 +100,8 @@ export default function Works() {
 
       <div className="bottomContainer">
         <a href="#portfolio">
-          <h3>More About My Work</h3>
           <div className="arrow">
-            <KeyboardArrowDownIcon />
+            <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>
         </a>
       </div>

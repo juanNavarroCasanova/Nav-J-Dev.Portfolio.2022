@@ -27,7 +27,7 @@ export default function Education() {
       id: 2,
       provider: "Tafe Queensland.",
       location: "Gold Coast - Australia.",
-      course: "Diploma of IT.",
+      course: "Diploma of Information Technology.",
       major: "Major in Software Development.",
       date: "July 2013 to July 2015.",
       units: [
@@ -45,15 +45,13 @@ export default function Education() {
   return (
     <div className="education" id="education">
       <div className="title">
-        <h1>Education.</h1>
+        <h1>Education</h1>
       </div>
       <div className="container">
         {data.map((d) => (
           <div key={d.id} className="card">
             <div className="top">
               <h1>{d.course}</h1>
-              <h2>{d.major}</h2>
-              <h3>{d.date}</h3>
             </div>
             <div className="center">
             <div className="units">
@@ -68,17 +66,18 @@ export default function Education() {
             </div>
             </div>
             <div className="bottom">
-              <h1>{d.provider}</h1>
-              <h2>{d.location}</h2>
+              <h1>{d.major}</h1>
+              <h2>{d.date}</h2>
+              <h3>{d.provider}</h3>
+              <h4>{d.location}</h4>
             </div>
           </div>
         ))}
       </div>
       <div className="bottomContainer">
         <a href="#works">
-          <h3>About My Jobs</h3>
           <div className="arrow">
-            <KeyboardArrowDownIcon />
+            <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>
         </a>
       </div>

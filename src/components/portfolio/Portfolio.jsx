@@ -12,7 +12,7 @@ export default function Portfolio(props) {
         <h2>
           I am a Freelance Developer Programmer from Spain based in Byron Bay -
           Australia, with experience using technologies such as ReactJS, Angular
-          5/6, HTML5, CSS3, C# as well as building Mobile Applications for IOS,
+          5/6, HTML5, CSS3, C#, Wordpress as well as building Mobile Applications for IOS,
           Android and Windows using Xamarin. I really enjoy learning new
           scripting languages and web tools that can help you to turn your
           ideas into sites and applications that can make a difference. These are my personal projects so
@@ -21,7 +21,7 @@ export default function Portfolio(props) {
       </div>
       <div className="container">
         <div className="item">
-          <img src="/assets/web.png" alt="Website background" />
+          <img src="/assets/laptop.png" alt="Website background" />
           <div className="description">
             <div className="button">
               <a
@@ -52,9 +52,8 @@ export default function Portfolio(props) {
 
       <div className="bottomContainer">
         <a href="#contact">
-          <h3>Contact Page</h3>
           <div className="arrow">
-            <KeyboardArrowDownIcon />
+            <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>
         </a>
       </div>
