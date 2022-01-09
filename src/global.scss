@@ -2,12 +2,6 @@ $mainColor: rgb(43, 40, 40);
 
 $width: 768px;
 
-@mixin mobile {
-  @media (max-width: 768px) {
-    @content;
-  }
-}
-
 
 
 $breakpoints: (

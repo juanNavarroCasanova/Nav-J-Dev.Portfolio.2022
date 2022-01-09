@@ -2,7 +2,7 @@
 
 .topbar {
   width: 100%;
-  color: rgb(crimson,0.9);
+  color: white;
   position: fixed;
   z-index: 3;
   top:0px;
@@ -35,18 +35,19 @@
     padding-top: 15px;
 
     .left {
-      padding: 10px;
+      padding: 2px;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      background-color: rgb(black,0.7);
-      border-width: 3px;
-      border-color: rgba(crimson, 0.9);
-      border-radius: 4px;
-      border-style: solid;
       
+      
+      .box{
+        background: black;
+        padding: 10px;
 
       h1{
+        letter-spacing: 6px;
+        text-transform: uppercase;
         font-size: 28px;
         font-weight: normal;
         text-decoration: none;
@@ -57,24 +58,25 @@
         }
 
         @include respond-to('xl') {
-          font-size: 26px;
-        }
-        @include respond-to('l') {
           font-size: 24px;
         }
+        @include respond-to('l') {
+          font-size: 22px;
+        }
         @include respond-to('m') {
-          font-size: 21px;
+          font-size: 20px;
         }
         @include respond-to('ms') {
-          font-size: 19px;
-        }
-        @include respond-to('s') {
           font-size: 18px;
         }
+        @include respond-to('s') {
+          font-size: 14px;
+        }
         @include respond-to('xs') {
-          font-size: 16px;
+          font-size: 12px;
         }
       }
+    }
     }
 
     .right {
@@ -82,7 +84,7 @@
 
       .hamburger {
         width: 40px;
-        height: 30px;
+        height: 26px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -105,14 +107,14 @@
           height: 22px;
         }
         @include respond-to('xs') {
-          width: 30px;
-          height: 22px;
+          width: 28px;
+          height: 20px;
         }
 
         span {
           width: 100%;
           height: 3px;
-          background-color: rgb(crimson,0.9);
+          background-color: white;
           transform-origin: left;
           transition: all 2s ease;
           @include respond-to('s') {
@@ -126,7 +128,6 @@
 
   &.active {
 
-    
     transition: all 3s ease;
 
     .hamburger {

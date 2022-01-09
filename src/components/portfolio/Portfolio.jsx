@@ -21,7 +21,7 @@ export default function Portfolio(props) {
       </div>
       <div className="container">
         <div className="item">
-          <img src="/assets/web.png" alt="Image of website background" />
+          <img src="/assets/web.png" alt="Website background" />
           <div className="description">
             <div className="button">
               <a
@@ -42,7 +42,7 @@ export default function Portfolio(props) {
           </div>
         </div>
         <div className="item construction">
-          <img src="/assets/covid.jpg" alt="Image of Covid app" />
+          <img src="/assets/covid.jpg" alt="Covid app" />
           <div className="description">
             <h4>COVID Tracker</h4>
             <h3>Coming soon !!!</h3>

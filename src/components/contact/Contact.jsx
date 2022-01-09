@@ -32,7 +32,7 @@ export default function Contact() {
                     <h1>LET'S GET SOCIAL</h1>
                     <div className="icon">
                         <a href="https://au.linkedin.com/in/navarrocasanova?trk=profile-badge" target="_blank" rel="noopener noreferrer">
-                            <img src={'assets/linkedin.png'} />
+                            <img src={'assets/linkedin.png'}  alt="Logo"/>
                         </a> 
                     </div> 
                     <h2>Or drop me a message...</h2>

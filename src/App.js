@@ -7,7 +7,7 @@ import "./app.scss";
 import Topbar from "./components/topbar/Topbar";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
-import OutsideClickHandler from "react-outside-click-handler";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -62,7 +62,7 @@ export default function Education() {
             <div className="info">
             <ul>
                 {d.units.map((unit) => {
-                  return <li>{unit}</li>;
+                  return <li key={unit}>{unit}</li>;
                 })}
               </ul>
             </div>

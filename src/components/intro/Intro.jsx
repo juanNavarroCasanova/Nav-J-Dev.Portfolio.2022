@@ -28,7 +28,7 @@ export default function Intro() {
       <div className="wrapper">
         <div className="description">
           <h2>Hi There, I'm</h2>
-          <h1>Juan N. Casanova.</h1>
+          <h1>Juan Navarro Casanova</h1>
           <h3>Developer Programmer.</h3>
           <h3>
             <span ref={textRef}></span>
@@ -36,9 +36,8 @@ export default function Intro() {
         </div>
         <div className="bottomContainer">
           <a href="#education">
-            <h3>Scroll to discover</h3>
             <div className="arrow">
-              <KeyboardArrowDownIcon />
+              <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
             </div>
           </a>
         </div>

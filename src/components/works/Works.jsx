@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./works.scss";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Works() {
@@ -83,7 +81,7 @@ export default function Works() {
               <div className="details">
                 <ul>
                   {d.roles.map((role) => {
-                    return <li>{role}</li>;
+                    return <li key={role}>{role}</li>;
                   })}
                 </ul>
               </div>

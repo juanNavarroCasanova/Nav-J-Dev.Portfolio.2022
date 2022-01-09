@@ -345,7 +345,7 @@
               }
               @include respond-to("l") {
                 font-size: 23px;
-                width: 80vw;
+                width: 50vw;
               }
               @include respond-to("m") {
                 font-size: 21px;
@@ -419,7 +419,7 @@
             }
             @include respond-to("l") {
               padding: 40px 0px;
-              width: 85vw;
+              width: 50vw;
             }
             @include respond-to("s") {
               padding: 30px 0px;
