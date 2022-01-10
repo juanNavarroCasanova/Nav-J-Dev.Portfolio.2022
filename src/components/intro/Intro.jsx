@@ -35,7 +35,7 @@ export default function Intro() {
           </h3>
         </div>
         <div className="bottomContainer">
-          <a href="#education">
+          <a href="#portfolio">
             <div className="arrow">
               <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
             </div>

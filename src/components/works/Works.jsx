@@ -99,7 +99,7 @@ export default function Works() {
       ))}
 
       <div className="bottomContainer">
-        <a href="#portfolio">
+        <a href="#education">
           <div className="arrow">
             <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>

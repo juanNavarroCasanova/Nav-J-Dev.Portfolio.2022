@@ -220,17 +220,17 @@
             li {
               padding: 10px;
               @include respond-to("xl") {
-                font-size: 24px;
+                font-size: 22px;
                 letter-spacing: 2px;
                 padding: 3px;
               }
               @include respond-to("l") {
-                font-size: 23px;
+                font-size: 21px;
                 letter-spacing: 2px;
                 padding: 3px;
               }
               @include respond-to("m") {
-                font-size: 22px;
+                font-size: 21px;
                 letter-spacing: 2px;
                 padding: 3px;
               }
@@ -248,7 +248,6 @@
                 font-size: 15px;
                 letter-spacing: 2px;
                 padding: 3px;
-                text-transform: uppercase;
                 font-weight: 300;
                 
               }

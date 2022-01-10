@@ -185,40 +185,35 @@
           outline: none;
           margin-bottom: 10px;
           text-transform: uppercase;
-          letter-spacing: 15px;
+          letter-spacing: 5px;
           line-height: 30px;
 
           @include respond-to("xl") {
             margin-bottom: 10px;
-            letter-spacing: 10px;
+            letter-spacing: 1px;
             line-height: 24px;
             font-size: 18px;
             width: 90%;
           }
           @include respond-to("l") {
             font-size: 17px;
-            letter-spacing: 10px;
             line-height: 21px;
           }
           @include respond-to("m") {
             font-size: 17px;
-            letter-spacing: 10px;
             line-height: 20px;
           }
           @include respond-to("ms") {
             font-size: 15px;
-            letter-spacing: 10px;
             line-height: 20px;
           }
           @include respond-to("s") {
-            letter-spacing: 10px;
             line-height: 20px;
             font-size: 14px;
           }
           @include respond-to("xs") {
             padding: 5px;
             width: 95%;
-            letter-spacing: 10px;
             line-height: 20px;
             font-size: 14px;
           }
@@ -238,14 +233,14 @@
           outline: none;
           margin-bottom: 45px;
           text-transform: uppercase;
-          letter-spacing: 15px;
+          letter-spacing: 5px;
           line-height: 30px;
 
           @include respond-to("xl") {
             margin-bottom: 30px;
             padding: 10px 10px 250px 10px;
             width: 90%;
-            letter-spacing: 10px;
+            letter-spacing: 1px;
             line-height: 24px;
             font-size: 18px;
           }
@@ -253,14 +248,12 @@
             margin-bottom: 15px;
             padding: 10px 10px 230px 10px;
             font-size: 17px;
-            letter-spacing: 10px;
             line-height: 21px;
           }
           @include respond-to("m") {
             margin-bottom: 15px;
             padding: 10px 10px 210px 10px;
             font-size: 17px;
-            letter-spacing: 10px;
             line-height: 20px;
           }
           @include respond-to("ms") {
@@ -268,13 +261,13 @@
             padding: 10px 10px 190px 10px;
             font-size: 16px;
             font-size: 15px;
-            letter-spacing: 10px;
+           
             line-height: 20px;
           }
           @include respond-to("s") {
             padding: 10px 10px 170px 10px;
             font-size: 15px;
-            letter-spacing: 10px;
+           
             line-height: 20px;
             font-size: 14px;
           }

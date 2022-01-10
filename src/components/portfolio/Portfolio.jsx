@@ -51,7 +51,7 @@ export default function Portfolio(props) {
       </div>
 
       <div className="bottomContainer">
-        <a href="#contact">
+        <a href="#works">
           <div className="arrow">
             <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>

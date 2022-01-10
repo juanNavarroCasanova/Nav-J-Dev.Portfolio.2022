@@ -75,7 +75,7 @@ export default function Education() {
         ))}
       </div>
       <div className="bottomContainer">
-        <a href="#works">
+        <a href="#contact">
           <div className="arrow">
             <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
           </div>
