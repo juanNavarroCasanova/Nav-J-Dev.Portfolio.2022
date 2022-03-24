@@ -14,12 +14,15 @@ export default function Intro() {
       showCursor: true,
       cursorChar: "|",
       strings: [
-        "React JS",
+        "ReactJS",
         "Angular",
         ".Net",
-        "Wordpress",
+        "Customized CMS",
         "Bootstrap",
         "SASS",
+        "C#",
+        "Git",
+        "MSSQL",
       ],
     });
   }, []);
