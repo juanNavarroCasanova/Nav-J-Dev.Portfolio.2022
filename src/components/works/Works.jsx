@@ -5,6 +5,24 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 export default function Works() {
   const data = [
     {
+      id: "navakasa",
+      title: "Navakasa - J Dev",
+      website: "https://navakasa-dev.com/",
+      roles: [
+        "Refactoring and upgrading of modules to improve performance.",
+        "Applying new coding techniques to improve App performance(PHP, HTML5, CSS).",
+        "Testing Applications done with CMS.",
+        "Give advice to customers to improve App security and performance.",
+        "Modify code and customise features(PHP, HTML5, CSS).",
+        "Providing advice, guidance for better developing proposals and strategies.",
+        "Recommending futures software purchases/upgrades for current applications.",
+      ],
+      product: "Customized apps and sites.",
+      tools: "CSS3, HTML5, PHP, CMS",
+      date: "Nov 2021 - to Present.",
+      role: "Front-end Developer.",
+    },
+    {
       id: "efficiencyLeaders",
       title: "Efficiency Leaders",
       website: "https://www.efficiencyleaders.com.au/",
@@ -17,7 +35,7 @@ export default function Works() {
       ],
       product: "Rapid AP.",
       tools:
-        "Typescript, Node.js, Angular 7, CSS 3, SASS, HTML 5, Git, Typescript, C#, .NET, Visual Studio.",
+        "Typescript, Node.js, Angular 7, CSS3, SASS, HTML5, Git, Typescript, C#, .NET, Visual Studio.",
       date: "November 2017 - December 2018.",
       role: "Front-end Developer.",
     },

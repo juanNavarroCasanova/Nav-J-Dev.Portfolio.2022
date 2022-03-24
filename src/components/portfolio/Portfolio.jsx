@@ -6,17 +6,24 @@ export default function Portfolio(props) {
   return (
     <div className="portfolio" id="portfolio">
       <div className="header">
-        <h1>My Projects</h1>
+        <h1>Portfolio</h1>
       </div>
       <div className="introduction">
         <h2>
-          I am a Freelance Developer Programmer from Spain based in Byron Bay -
-          Australia, with experience using technologies such as ReactJS, Angular
-          5/6, HTML5, CSS3, C#, Wordpress as well as building Mobile Applications for IOS,
-          Android and Windows using Xamarin. I really enjoy learning new
-          scripting languages and web tools that can help you to turn your
-          ideas into sites and applications that can make a difference. These are my personal projects so
-          far, my own portfolio and a Covid Tracker.{" "}
+          I am a Front-end Software Developer with experience using Angular 5/6,
+          HTML5, CSS3,C# technologies. Moreover, I was a part of the development
+          team (have contributed on the development of) for Mobile Applications
+          for IOS and Android using Xamarin.<br /><br />I do enjoy learning new programing
+          languages and web tools. For instance, I have been working on pet
+          projects using high-end libraries/languages such as ReactJS, Bootstrap
+          (with SASS), and GIT. Furthermore, I have also accepted proposals from
+          local businesses and individuals to build applications for different
+          purposes using my own code on different Ecommerce and Bookings
+          frameworks; moreover, I took advantaged of this acquired knowledge to
+          develop them.<br /><br /> Working at the moment on my own projects on React and as
+          a freelancer improving CMS performance and creating new personalised
+          features. I’m open to having discussions about any opportunities to
+          grow to be part of a great team of developers.{" "}
         </h2>
       </div>
       <div className="container">
@@ -53,7 +60,7 @@ export default function Portfolio(props) {
       <div className="bottomContainer">
         <a href="#works">
           <div className="arrow">
-            <KeyboardArrowDownIcon style={{ fontSize: 70 }}/>
+            <KeyboardArrowDownIcon style={{ fontSize: 70 }} />
           </div>
         </a>
       </div>
